@@ -1,0 +1,46 @@
+.toggle-container {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.toggle-container input {
+  display: none;
+}
+
+/* Slider */
+.toggle-slider {
+  width: 42px;
+  height: 22px;
+  background-color: #d1d5db;
+  border-radius: 999px;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+/* Knob */
+.toggle-slider::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s;
+}
+
+/* Checked state */
+.toggle-container input:checked + .toggle-slider {
+  background-color: #2563eb;
+}
+
+.toggle-container input:checked + .toggle-slider::before {
+  transform: translateX(20px);
+}
+
+.toggle-label {
+  font-size: 14px;
+}
