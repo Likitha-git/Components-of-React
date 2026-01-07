@@ -6,6 +6,7 @@ import InputView from "./Components/Input/InputView";
 import ToggleView from "./Components/Input/InputView";
 import LoaderPage from "./Components/Loader/LoaderPage";
 import CardPage from "./Components/Card/CardPage";
+import RadioButtonPage from "./Components/RadioButton/RadioButtonPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="toggle" element={<ToggleView />} />
         <Route path="loader" element={<LoaderPage />} />
         <Route path="card" element={<CardPage />} />
+        <Route path="radiobutton" element={<RadioButtonPage />} />
       </Route>
     </Routes>
   );

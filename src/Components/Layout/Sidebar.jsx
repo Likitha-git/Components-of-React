@@ -11,6 +11,7 @@ function Sidebar() {
         <li><Link to="/toggle">Toggle</Link></li>
         <li><Link to="/loader">Loader</Link></li>
         <li><Link to="/card">Card</Link></li>
+        <li><Link to="/radiobutton">Radio Button</Link></li>
       </ul>
     </aside>
   );
